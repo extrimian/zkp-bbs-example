@@ -16,6 +16,7 @@
     "typescript": "3.7.5"
   },
   "dependencies": {
-    "@mattrglobal/node-bbs-signatures": "0.10.0"
+    "@mattrglobal/node-bbs-signatures": "0.10.0",
+    "base64-to-uint8array": "^1.0.0"
   }
 }
