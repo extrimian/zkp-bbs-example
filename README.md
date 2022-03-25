@@ -8,7 +8,7 @@ npm run demo
 
 # Paquetes utilizados
 
-## node-bbs-signaturesfas
+## node-bbs-signatures
 
 Para firma, derivar y verificar.
 https://www.npmjs.com/package/@mattrglobal/node-bbs-signatures
