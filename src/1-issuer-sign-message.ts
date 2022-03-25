@@ -1,7 +1,5 @@
 import { blsSign, generateBls12381G2KeyPair } from "@mattrglobal/node-bbs-signatures";
-import { AgePredicate, NationalityPredicate } from "./enums/predicate";
 import { GetPredicates } from "./get-predicates";
-import { stringToUInt8Array } from "./helper/string-to-uint8array";
 
 export async function issuerSignMessage() {
     const keyPair = await generateBls12381G2KeyPair();

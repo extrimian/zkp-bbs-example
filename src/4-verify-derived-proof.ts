@@ -1,6 +1,6 @@
 import { blsVerify, blsVerifyProof } from "@mattrglobal/node-bbs-signatures";
 import keys from "./data/keys.json";
-import { AgePredicate, NationalityPredicate } from "./enums/predicate";
+import { PredicadoEdad, PredicadoNacionalidad } from "./enums/predicate";
 const base64ToBuffer = require("base64-to-uint8array");
 import { stringToUInt8Array } from "./helper/string-to-uint8array";
 import data from "./data/derived-message.json";
@@ -18,7 +18,8 @@ export async function verifyDerivedProof() {
         proof,
         publicKey: issuerPublicKey,
         messages: [
-            stringToUInt8Array(AgePredicate.Adult),
+            stringToUInt8Array("Juan Perez"),
+            stringToUInt8Array(PredicadoEdad.Menor65),
         ],
         nonce: stringToUInt8Array("nonce"),
     });

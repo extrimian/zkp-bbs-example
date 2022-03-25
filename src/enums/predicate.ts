@@ -1,9 +1,15 @@
-export enum AgePredicate {
-    Adult = "a01",
-    Minor = "a02",
+export enum PredicadoEdad {
+    Menor65 = "e01",
+    Mayor65 = "e02",
+    Mayor70 = "e03",
 }
 
-export enum NationalityPredicate {
-    Argentinian = "n01",
-    NoArgentinian = "n02",
+export enum PredicadoTipoLicencia {
+    Profesional = "l01",
+    Particular = "l02",
+}
+
+export enum PredicadoNacionalidad {
+    Argentino = "c01",
+    Britanico = "c02",
 }

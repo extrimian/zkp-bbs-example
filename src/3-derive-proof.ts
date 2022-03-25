@@ -13,7 +13,7 @@ export async function deriveProof() {
         publicKey: new Uint8Array(base64ToBuffer(keys.publicKey)),
         messages: GetPredicates(),
         nonce: stringToUInt8Array("nonce"),
-        revealed: [1],
+        revealed: [0, 3],
     });
 
     console.log(`Output proof base64 = ${Buffer.from(proof).toString("base64")}`);
