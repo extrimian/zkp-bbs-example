@@ -1,10 +1,21 @@
 # node-bbs-signatures-sample
 
-A simple runnable sample demoing how to use the API.
-
-Run the following and observe the console output
-
+Para correr la demo
 ```
 npm install ci
 npm run demo
 ```
+
+# Paquetes utilizados
+
+## node-bbs-signaturesfas
+
+Para firma, derivar y verificar.
+https://www.npmjs.com/package/@mattrglobal/node-bbs-signatures
+
+## base64-to-uint8array
+
+Librería utilizada para facilitar la conversión de base64 a uint8array
+https://www.npmjs.com/package/base64-to-uint8array
+
+
